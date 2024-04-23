@@ -85,7 +85,7 @@ function editTask(index) {
 
     // 根據編輯模式設置新增按鈕的文字
     const addBtn = document.getElementById("addButton");
-    addBtn.textContent = editingIndex > -1 ? "更新" : "新增";
+    addBtn.textContent = editingIndex > -1 ? "編輯" : "新增";
 }
 
 // 刪除待辦事項

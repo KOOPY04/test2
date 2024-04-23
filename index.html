@@ -10,7 +10,7 @@
     <h1>待辦事項清單</h1>
     <div class="input-container">
         <input type="text" id="taskInput" placeholder="輸入待辦事項">
-        <button onclick="addTask()">新增</button>
+        <button id="addButton" onclick="addTask()">新增</button> <!-- 修改按鈕的 ID 為 "addButton" -->
     </div>
     <ul id="taskList"></ul>
     <button id="clearButton" onclick="clearAll()" style="display: none;">清除所有項目</button>
