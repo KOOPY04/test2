@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 95%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* 讓內部元素可以使用絕對定位 */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: calc(100% - 100px);
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px 20px; /* 調整按鈕的 padding */
+    background-color: #7ea8ea;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: auto;
+    width: auto; /* 調整按鈕寬度為自動 */
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    width: 70%;
+}
+
+li {
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    padding: 12px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative; /* 讓內部的按鈕可以使用絕對定位 */
+}
+
+.edit-btn, .delete-btn {
+    padding: 5px 8px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-right: 3px;
+    position: absolute; /* 使用絕對定位 */
+    align-content: center;
+    right: 3%; /* 距離右側 5px */
+}
+
+.edit-btn {
+    background-color: #93AF6E;
+    color: #fff;
+    margin-right: 50px;
+}
+
+.delete-btn {
+    background-color: #E67763;
+    color: #fff;
+}
+
+.delete-btn:hover, .edit-btn:hover {
+    opacity: 0.8;
+}
+
+.edit-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
